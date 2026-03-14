@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://bv5ylfnejpc2d"]
 
 [ext_resource type="Texture2D" uid="uid://b5se2d3h3cmlg" path="res://Sprites/Main_characters/Pinia/Attack.png" id="1_07a16"]
+[ext_resource type="Script" uid="uid://cdg0t4xqnygce" path="res://Scripts/movement_Pinia.gd" id="1_ilytm"]
 [ext_resource type="Texture2D" uid="uid://cvyjustdongy1" path="res://Sprites/Main_characters/Pinia/Dialogue.png" id="2_ilytm"]
 [ext_resource type="Texture2D" uid="uid://st32gssehp4d" path="res://Sprites/Main_characters/Pinia/Idle.png" id="3_vutb2"]
 [ext_resource type="Texture2D" uid="uid://cw726engl58fl" path="res://Sprites/Main_characters/Pinia/Protection.png" id="4_rd7c5"]
 [ext_resource type="Texture2D" uid="uid://c1u28iuwejfpa" path="res://Sprites/Main_characters/Pinia/Walk.png" id="5_jvuk2"]
+[ext_resource type="AudioStream" uid="uid://dnyhbh5rv0xi7" path="res://Sounds/Characters/femael_grunts_1.mp3" id="7_vutb2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5umnc"]
 size = Vector2(66, 85)
@@ -158,7 +160,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wwt8i")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
 "speed": 12.0
 }, {
@@ -264,6 +266,7 @@ animations = [{
 [node name="PiniaAnimation" type="Node2D" unique_id=472891980]
 
 [node name="Pinia" type="CharacterBody2D" parent="." unique_id=11774545]
+script = ExtResource("1_ilytm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pinia" unique_id=1714886885]
 position = Vector2(2, 21.5)
@@ -271,8 +274,11 @@ shape = SubResource("RectangleShape2D_5umnc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pinia" unique_id=924519930]
 sprite_frames = SubResource("SpriteFrames_bp5mi")
-animation = &"idle"
+animation = &"walk"
 autoplay = "idle"
-frame_progress = 0.80388564
+frame = 11
+frame_progress = 0.950328
 
-[node name="Camera2D" type="Camera2D" parent="Pinia" unique_id=1719362096]
+[node name="AudioAttack" type="AudioStreamPlayer2D" parent="Pinia" unique_id=1777247274]
+stream = ExtResource("7_vutb2")
+volume_db = 5.0

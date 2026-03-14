@@ -1,0 +1,12 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
+Sprite2D
+TextureButton
+CanvasLayer
+TouchScreenButton
+ShapeCast2D
+Camera2D
+Control
+TextureRect
+ParallaxLayer
+ParallaxBackground

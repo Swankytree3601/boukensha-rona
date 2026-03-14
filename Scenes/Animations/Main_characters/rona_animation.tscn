@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://8iro53lgrhjx"]
 
 [ext_resource type="Texture2D" uid="uid://s7nswm51fw85" path="res://Sprites/Main_characters/Rona/Attack.png" id="1_l1nmv"]
+[ext_resource type="Script" uid="uid://cbys2dj23o3k0" path="res://Scripts/movement_Rona.gd" id="1_u86vn"]
 [ext_resource type="Texture2D" uid="uid://c42na6qt0pkk7" path="res://Sprites/Main_characters/Rona/Dialogue.png" id="2_u86vn"]
 [ext_resource type="Texture2D" uid="uid://vpls8twcvwqi" path="res://Sprites/Main_characters/Rona/Idle.png" id="3_sl21q"]
 [ext_resource type="Texture2D" uid="uid://bg52ttobpbglg" path="res://Sprites/Main_characters/Rona/Protection.png" id="4_lsyng"]
@@ -380,18 +381,15 @@ animations = [{
 
 [node name="RonaAnimation" type="Node2D" unique_id=426291863]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=768997914]
+[node name="Rona" type="CharacterBody2D" parent="." unique_id=768997914]
+script = ExtResource("1_u86vn")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1547852305]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rona" unique_id=1547852305]
 position = Vector2(0, 25)
 shape = SubResource("RectangleShape2D_tqx5i")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1099418382]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Rona" unique_id=1099418382]
 sprite_frames = SubResource("SpriteFrames_bhdhv")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.8503726
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1408469964]
-drag_horizontal_enabled = true
-drag_vertical_enabled = true

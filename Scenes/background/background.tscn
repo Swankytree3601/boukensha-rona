@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://bk31pdpjgngr8"]
+
+[ext_resource type="Texture2D" uid="uid://mr2s4nq1dlod" path="res://Sprites/others/grass.png" id="1_77j4o"]
+[ext_resource type="PackedScene" uid="uid://cu0yc3bb2ks1e" path="res://Scenes/Animations/Main_characters/mina_animation.tscn" id="2_8kpno"]
+[ext_resource type="AudioStream" uid="uid://ghgijdkhdmmq" path="res://Sounds/FX/music_background.mp3" id="2_naexd"]
+[ext_resource type="Script" uid="uid://b5hba1mseym4q" path="res://Scripts/tactil_buttons.gd" id="3_2s748"]
+[ext_resource type="PackedScene" uid="uid://bv5ylfnejpc2d" path="res://Scenes/Animations/Main_characters/pinia_animation.tscn" id="3_8qmst"]
+[ext_resource type="PackedScene" uid="uid://8iro53lgrhjx" path="res://Scenes/Animations/Main_characters/rona_animation.tscn" id="4_i0unp"]
+[ext_resource type="Texture2D" uid="uid://blmp3ljqdm06d" path="res://Sprites/UI/Square Buttons 26x26.png" id="6_naexd"]
+
+[node name="Node2D" type="Node2D" unique_id=1151190174]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1586446174]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=325116515]
+motion_mirroring = Vector2(256, 256)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer" unique_id=15800480]
+offset_right = 898.0
+offset_bottom = 396.0
+texture = ExtResource("1_77j4o")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="PiniaAnimation" parent="." unique_id=472891980 instance=ExtResource("3_8qmst")]
+position = Vector2(200, 200)
+
+[node name="Mina_animation" parent="." unique_id=1454750652 instance=ExtResource("2_8kpno")]
+position = Vector2(300, 300)
+
+[node name="RonaAnimation" parent="." unique_id=426291863 instance=ExtResource("4_i0unp")]
+position = Vector2(200, 400)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1550786674]
+anchor_mode = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=288545844]
+script = ExtResource("3_2s748")
+
+[node name="go_up" type="TextureButton" parent="CanvasLayer" unique_id=198726553]
+offset_left = 955.65906
+offset_top = 406.902
+offset_right = 985.0
+offset_bottom = 438.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_up" unique_id=938536182]
+texture = ExtResource("6_naexd")
+centered = false
+
+[node name="go_left" type="TextureButton" parent="CanvasLayer" unique_id=1494939192]
+offset_left = 858.4961
+offset_top = 489.42404
+offset_right = 887.0
+offset_bottom = 519.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_left" unique_id=725182304]
+texture = ExtResource("6_naexd")
+centered = false
+
+[node name="go_down" type="TextureButton" parent="CanvasLayer" unique_id=715638724]
+offset_left = 949.004
+offset_top = 565.291
+offset_right = 979.0
+offset_bottom = 595.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_down" unique_id=1661851237]
+texture = ExtResource("6_naexd")
+centered = false
+
+[node name="go_right" type="TextureButton" parent="CanvasLayer" unique_id=40676192]
+offset_left = 1055.4841
+offset_top = 468.12802
+offset_right = 1084.0
+offset_bottom = 498.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_right" unique_id=1473153989]
+texture = ExtResource("6_naexd")
+centered = false
+
+[node name="go_attack" type="TextureButton" parent="CanvasLayer" unique_id=1506202996]
+offset_left = 155.72803
+offset_top = 522.699
+offset_right = 187.0
+offset_bottom = 554.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_attack" unique_id=76773329]
+texture = ExtResource("6_naexd")
+centered = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=219059257]
+stream = ExtResource("2_naexd")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true

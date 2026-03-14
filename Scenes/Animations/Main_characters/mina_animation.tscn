@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cu0yc3bb2ks1e"]
 
 [ext_resource type="Texture2D" uid="uid://cpbce3et61f4t" path="res://Sprites/Main_characters/Mina/Attack.png" id="1_e06qc"]
+[ext_resource type="Script" uid="uid://7bxjryxm6g2v" path="res://Scripts/movement_Mina.gd" id="1_nx8cd"]
 [ext_resource type="Texture2D" uid="uid://c8v4mb2dlmjk6" path="res://Sprites/Main_characters/Mina/Dialogue.png" id="2_nx8cd"]
 [ext_resource type="Texture2D" uid="uid://b7kfuu8hbsebf" path="res://Sprites/Main_characters/Mina/Idle.png" id="3_yqydd"]
 [ext_resource type="Texture2D" uid="uid://c63xqld72ssnm" path="res://Sprites/Main_characters/Mina/Protection.png" id="4_mipd5"]
@@ -212,7 +213,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_k2yi5")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
 "speed": 12.0
 }, {
@@ -348,6 +349,7 @@ animations = [{
 [node name="Mina_animation" type="Node2D" unique_id=1454750652]
 
 [node name="Mina" type="CharacterBody2D" parent="." unique_id=402797065]
+script = ExtResource("1_nx8cd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mina" unique_id=1626064666]
 position = Vector2(-3, 21.5)
@@ -355,8 +357,5 @@ shape = SubResource("RectangleShape2D_hta67")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Mina" unique_id=1269727230]
 sprite_frames = SubResource("SpriteFrames_7a2nj")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.2612754
-
-[node name="Camera2D" type="Camera2D" parent="Mina" unique_id=188575091]
