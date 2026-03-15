@@ -1,12 +1,12 @@
 extends ParallaxBackground
 
-@export var textura: Texture2D  # Arrastra tu textura de 256x256 aquí
+@export var textura: Texture2D  # textura de 256x256
 @export var velocidad: float = 50.0
 
 func _ready():
 	# Crear capa parallax
 	var layer = ParallaxLayer.new()
-	layer.motion_mirroring = Vector2(256, 0)  # Importante: 256 es el ancho
+	layer.motion_mirroring = Vector2(256, 0)  # 256 es el ancho
 	
 	# Crear sprite
 	var sprite = Sprite2D.new()

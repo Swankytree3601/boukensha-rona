@@ -1,12 +1,4 @@
-res://Scenes/Animations/Main_characters/pinia_animation.tscn
-res://Scenes/Game/background.tscn
-res://Scenes/Animations/Enemies/kitsune.tscn
-res://Scenes/Animations/Enemies/Gorgon.tscn
-res://Scenes/Animations/Enemies/Skeleton_knight.tscn
-res://Scenes/Animations/Enemies/Skeleton_Spear.tscn
-res://Scripts/enemigo.gd
-res://Scripts/movement_Pinia.gd
-res://Scenes/Game/game_scene.tscn
+res://README.md
 res://Scripts/spawner.gd
-res://Scenes/Animations/Enemies/Spawner.tscn
 res://Scripts/tactil_buttons.gd
+res://Scripts/infinite_background.gd

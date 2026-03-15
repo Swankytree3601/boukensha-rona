@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 func _ready():
-	# Conectar botones por código (más fiable)
+	# Conectar botones por código
 	$go_up.button_down.connect(_on_go_up_button_down)
 	$go_up.button_up.connect(_on_go_up_button_up)
 	$go_down.button_down.connect(_on_go_down_button_down)

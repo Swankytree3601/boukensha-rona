@@ -12,8 +12,7 @@ extends Node2D
 var enemigos_actuales: Array = []
 
 # ────────────────────────────────────────────────────────────────────────────
-# CONFIGURACIÓN INICIAL
-# ────────────────────────────────────────────────────────────────────────────
+# Configuración inicial
 func _ready():
 	# Empezar a spawnear enemigos
 	iniciar_spawn()
@@ -31,8 +30,7 @@ func iniciar_spawn():
 		await get_tree().create_timer(tiempo_entre_spawns).timeout
 
 # ────────────────────────────────────────────────────────────────────────────
-# SPAWN DE ENEMIGOS
-# ────────────────────────────────────────────────────────────────────────────
+# Spawn de enemigos
 func spawn_un_enemigo():
 	if not jugador:
 		jugador = get_tree().get_first_node_in_group("jugador")
@@ -60,8 +58,7 @@ func spawn_un_enemigo():
 	enemigos_actuales.append(enemigo)
 
 # ────────────────────────────────────────────────────────────────────────────
-# MÉTODOS AUXILIARES
-# ────────────────────────────────────────────────────────────────────────────
+# Métodos auxiliares
 func get_cantidad_enemigos_vivos() -> int:
 	return enemigos_actuales.size()
 
