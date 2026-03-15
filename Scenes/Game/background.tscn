@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://o0kvrp3857ll"]
 
 [ext_resource type="Script" uid="uid://brfv71m116dj7" path="res://Scripts/infinite_background.gd" id="1_jb224"]
-[ext_resource type="Texture2D" uid="uid://mr2s4nq1dlod" path="res://Sprites/others/grass.png" id="1_sn1xx"]
+[ext_resource type="Texture2D" uid="uid://mr2s4nq1dlod" path="res://Sprites/Others/grass.png" id="1_sn1xx"]
 
 [node name="Background" type="Node2D" unique_id=170024693]
 

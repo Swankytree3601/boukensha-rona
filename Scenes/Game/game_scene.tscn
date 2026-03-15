@@ -1,11 +1,22 @@
 [gd_scene format=3 uid="uid://crps1f4a5c5bs"]
 
 [ext_resource type="PackedScene" uid="uid://o0kvrp3857ll" path="res://Scenes/Game/background.tscn" id="1_83mwp"]
+[ext_resource type="PackedScene" uid="uid://d4eiabmcrsjab" path="res://Scenes/Animations/Enemies/Gorgon.tscn" id="1_wsift"]
 [ext_resource type="PackedScene" uid="uid://bv5ylfnejpc2d" path="res://Scenes/Animations/Main_characters/pinia_animation.tscn" id="2_p56l1"]
+[ext_resource type="PackedScene" uid="uid://7a5gmrglu7g" path="res://Scenes/Animations/Enemies/kitsune.tscn" id="2_u011v"]
 [ext_resource type="PackedScene" uid="uid://yn7l4fqdeafb" path="res://Scenes/Game/buttons.tscn" id="3_7r8ec"]
+[ext_resource type="PackedScene" uid="uid://cr8hy5rchh3ue" path="res://Scenes/Animations/Enemies/Skeleton_knight.tscn" id="3_jxx51"]
+[ext_resource type="PackedScene" uid="uid://b0vdtmwj5hkjl" path="res://Scenes/Animations/Enemies/Skeleton_Spear.tscn" id="4_fqdje"]
+[ext_resource type="PackedScene" uid="uid://b4hv4ed1y6v8m" path="res://Scenes/Game/Spawner.tscn" id="5_83mwp"]
 [ext_resource type="AudioStream" uid="uid://ghgijdkhdmmq" path="res://Sounds/FX/music_background.mp3" id="7_hl8ku"]
 
 [node name="Node2D" type="Node2D" unique_id=1151190174]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=219059257]
+stream = ExtResource("7_hl8ku")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true
 
 [node name="Background" parent="." unique_id=170024693 instance=ExtResource("1_83mwp")]
 
@@ -14,11 +25,6 @@ position = Vector2(200, 200)
 
 [node name="Buttons" parent="." unique_id=1723782809 instance=ExtResource("3_7r8ec")]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1550786674]
-anchor_mode = 0
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=219059257]
-stream = ExtResource("7_hl8ku")
-volume_db = -10.0
-autoplay = true
-parameters/looping = true
+[node name="Spawner" parent="." unique_id=1330981096 instance=ExtResource("5_83mwp")]
+position = Vector2(-40.376587, 46.37506)
+tipos_enemigos = Array[PackedScene]([ExtResource("1_wsift"), ExtResource("2_u011v"), ExtResource("3_jxx51"), ExtResource("4_fqdje")])

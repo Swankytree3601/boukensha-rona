@@ -1,4 +1,11 @@
-res://Scenes/Animations/Main_characters/mina_animation.tscn::3fac4516583e463d716a36fe58effe04::1773505968::res://.godot/exported/133200997/export-f143caa90c356bed3c5678a305005626-mina_animation.scn
-res://Scenes/Animations/Main_characters/pinia_animation.tscn::02289f23e29bce63217043312fbcb6b3::1773506579::res://.godot/exported/133200997/export-af17a8f1e0aedacf28c535c2ca50783e-pinia_animation.scn
-res://Scenes/Animations/Main_characters/rona_animation.tscn::5df7d81e2b13e3dd394effb4079e7447::1773505335::res://.godot/exported/133200997/export-a32b0e3927183267b71f89d9e3d401fa-rona_animation.scn
-res://Scenes/background/background.tscn::965d93d0843e177965f5e78b9e18cba8::1773506520::res://.godot/exported/133200997/export-45f53882799812575943131a50da0d39-background.scn
+res://Scenes/Animations/Main_characters/mina_animation.tscn::23c8ea99865ffcabe1be4af9f38f35a5::1773572465::res://.godot/exported/133200997/export-f143caa90c356bed3c5678a305005626-mina_animation.scn
+res://Scenes/Animations/Main_characters/pinia_animation.tscn::ab4a5eaca97bcbec34d3db1b37c191bb::1773574723::res://.godot/exported/133200997/export-af17a8f1e0aedacf28c535c2ca50783e-pinia_animation.scn
+res://Scenes/Animations/Main_characters/rona_animation.tscn::598d788c13261e22a1767329ac471a82::1773572465::res://.godot/exported/133200997/export-a32b0e3927183267b71f89d9e3d401fa-rona_animation.scn
+res://Scenes/Animations/Enemies/Gorgon.tscn::c2009d02dde7281f10f0d086fc4be4f0::1773576680::res://.godot/exported/133200997/export-9fedadc53dd1d1bc88a0df829576be9a-Gorgon.scn
+res://Scenes/Animations/Enemies/kitsune.tscn::10ca94bd8fa4d7c7bee54e4e79c93603::1773576680::res://.godot/exported/133200997/export-056002dac4358d6204c85418ea9b98b1-kitsune.scn
+res://Scenes/Animations/Enemies/Skeleton_knight.tscn::a2a57be4238f64e9ea712879b8526dff::1773576680::res://.godot/exported/133200997/export-9d4c5221c432f203a9c31c302325fff2-Skeleton_knight.scn
+res://Scenes/Animations/Enemies/Skeleton_Spear.tscn::4c3c3dcc0688424335d6b44ed8124442::1773576680::res://.godot/exported/133200997/export-b51702dcecae9f851d49771656b4ad5e-Skeleton_Spear.scn
+res://Scenes/Game/background.tscn::bf7d967a923aad14d37a919f760bb710::1773574723::res://.godot/exported/133200997/export-6bf30be1ec77a2e9f5318b08bffd535c-background.scn
+res://Scenes/Game/buttons.tscn::2f2e835c227fc11b1f497365147f9a0a::1773573939::res://.godot/exported/133200997/export-81b0d3997032b366b5f7422b4df1519b-buttons.scn
+res://Scenes/Game/game_scene.tscn::6f310c28c414df2261436cd0fd7cc3c0::1773578620::res://.godot/exported/133200997/export-390943124143fb9966dd7af6cef28927-game_scene.scn
+res://Scenes/Game/Spawner.tscn::553947448e44bcedd37ee86936adad82::1773577740::res://.godot/exported/133200997/export-394f9a5c408204a7c4e04411921aa378-Spawner.scn

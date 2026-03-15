@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cw726engl58fl" path="res://Sprites/Main_characters/Pinia/Protection.png" id="4_rd7c5"]
 [ext_resource type="Texture2D" uid="uid://c1u28iuwejfpa" path="res://Sprites/Main_characters/Pinia/Walk.png" id="5_jvuk2"]
 [ext_resource type="AudioStream" uid="uid://dnyhbh5rv0xi7" path="res://Sounds/Characters/femael_grunts_1.mp3" id="7_vutb2"]
+[ext_resource type="Texture2D" uid="uid://b10ro6ydrmyyn" path="res://Sprites/Others/shadows.png" id="8_rd7c5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5umnc"]
 size = Vector2(66, 85)
@@ -284,3 +285,8 @@ stream = ExtResource("7_vutb2")
 volume_db = 5.0
 
 [node name="Camera2D" type="Camera2D" parent="Pinia" unique_id=1646731357]
+
+[node name="PixilFrame0" type="Sprite2D" parent="Pinia" unique_id=441405768]
+position = Vector2(-1.5000007, 62.5)
+scale = Vector2(5.5, 1.3000004)
+texture = ExtResource("8_rd7c5")
