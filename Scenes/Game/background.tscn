@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://o0kvrp3857ll"]
+
+[ext_resource type="Script" uid="uid://brfv71m116dj7" path="res://Scripts/infinite_background.gd" id="1_jb224"]
+[ext_resource type="Texture2D" uid="uid://mr2s4nq1dlod" path="res://Sprites/others/grass.png" id="1_sn1xx"]
+
+[node name="Background" type="Node2D" unique_id=170024693]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=2128898132]
+script = ExtResource("1_jb224")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=272442701]
+motion_mirroring = Vector2(256, 256)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer" unique_id=26664011]
+offset_right = 3127.0
+offset_bottom = 1569.0
+texture = ExtResource("1_sn1xx")
+expand_mode = 1
+stretch_mode = 1

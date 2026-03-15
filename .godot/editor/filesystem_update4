@@ -1,6 +1,7 @@
-res://Scenes/background/background.tscn
+res://Scenes/background/game_scene.tscn
+res://README.md
+res://Scenes/Game/game_scene.tscn
+res://Scripts/infinite_background.gd
+res://Scenes/Game/background.tscn
 res://Scenes/Animations/Main_characters/pinia_animation.tscn
-res://Scripts/movement_Pinia.gd
-res://Scripts/tactil_buttons.gd
-res://Scripts/movement_Mina.gd
-res://Scripts/movement_Rona.gd
+res://Scenes/Game/buttons.tscn

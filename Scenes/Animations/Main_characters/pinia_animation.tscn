@@ -282,3 +282,5 @@ frame_progress = 0.950328
 [node name="AudioAttack" type="AudioStreamPlayer2D" parent="Pinia" unique_id=1777247274]
 stream = ExtResource("7_vutb2")
 volume_db = 5.0
+
+[node name="Camera2D" type="Camera2D" parent="Pinia" unique_id=1646731357]

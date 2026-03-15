@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://yn7l4fqdeafb"]
+
+[ext_resource type="Script" uid="uid://b5hba1mseym4q" path="res://Scripts/tactil_buttons.gd" id="1_l1ndu"]
+[ext_resource type="Texture2D" uid="uid://blmp3ljqdm06d" path="res://Sprites/UI/Square Buttons 26x26.png" id="2_4co4p"]
+
+[node name="Buttons" type="Node2D" unique_id=1723782809]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=605066794]
+script = ExtResource("1_l1ndu")
+
+[node name="go_up" type="TextureButton" parent="CanvasLayer" unique_id=19599120]
+offset_left = 1650.0
+offset_top = 750.0
+offset_right = 1735.0
+offset_bottom = 835.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_up" unique_id=1153620125]
+scale = Vector2(3, 3)
+texture = ExtResource("2_4co4p")
+centered = false
+
+[node name="go_down" type="TextureButton" parent="CanvasLayer" unique_id=417531426]
+offset_left = 1650.0
+offset_top = 900.0
+offset_right = 1735.0
+offset_bottom = 985.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_down" unique_id=1858072994]
+scale = Vector2(3, 3)
+texture = ExtResource("2_4co4p")
+centered = false
+
+[node name="go_left" type="TextureButton" parent="CanvasLayer" unique_id=1109665722]
+offset_left = 1500.0
+offset_top = 900.0
+offset_right = 1585.0
+offset_bottom = 985.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_left" unique_id=1247448763]
+scale = Vector2(3, 3)
+texture = ExtResource("2_4co4p")
+centered = false
+
+[node name="go_right" type="TextureButton" parent="CanvasLayer" unique_id=1838438248]
+offset_left = 1800.0
+offset_top = 900.0
+offset_right = 1885.0
+offset_bottom = 985.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_right" unique_id=972372632]
+scale = Vector2(3, 3)
+texture = ExtResource("2_4co4p")
+centered = false
+
+[node name="go_attack" type="TextureButton" parent="CanvasLayer" unique_id=644139163]
+offset_left = 200.0
+offset_top = 900.0
+offset_right = 285.0
+offset_bottom = 985.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/go_attack" unique_id=1722353928]
+scale = Vector2(3, 3)
+texture = ExtResource("2_4co4p")
+centered = false
